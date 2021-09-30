@@ -1,4 +1,4 @@
-import { Task } from './../models/task';
+import { Task } from '../models/task';
 import { FiltroPesquisa } from './../models/FiltroPesquisa';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
