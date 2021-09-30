@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Task } from 'src/app/models/task';
-import { TaskService } from 'src/app/services/task.service';
+import { TasksService } from 'src/app/services/tasks.service';
 
 
 @Component({
@@ -17,17 +17,17 @@ export class CadastrarComponent implements OnInit {
   data!: string;
 
 
-  constructor(private service: TaskService, private router: Router) { }
+  constructor(private service: TasksService, private router: Router) { }
 
   ngOnInit(): void{}
 
   cadastrar(): void
     {
         let task : Task = {
-            nome: this.nome,
-            descricao: this.descricao,
-            prioridade: this.prioridade,
-            data: this.data,
+            NomeTask: this.nome,
+            DescricaoTask: this.descricao,
+            PrioridadeTask: this.prioridade,
+            DataTask: this.data,
         };
         //Chamar o create do service
         this.service.create(task).subscribe(task => {
