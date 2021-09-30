@@ -9,7 +9,6 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule} from '@angular/material/icon';
 import { MatFormFieldModule} from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-import { TasksService } from './services/tasks.service';
 
 @NgModule({
   declarations: [
@@ -26,8 +25,8 @@ import { TasksService } from './services/tasks.service';
     MatFormFieldModule,
     MatInputModule,
     MatFormFieldModule,
-    MatInputModule,
-    TasksService
+    MatInputModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
