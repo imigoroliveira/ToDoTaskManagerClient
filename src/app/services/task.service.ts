@@ -25,8 +25,8 @@ export class TaskService {
     return this.http.get<Task[]>(`${this.baseUrl}/list`);
   }
 
- 
- 
+
+
   }
 
 }
