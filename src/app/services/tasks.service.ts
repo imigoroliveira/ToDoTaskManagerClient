@@ -6,8 +6,7 @@ import { Task } from '../models/task';
 @Injectable({
   providedIn: 'root'
 })
-export class TaskService {
-
+export class TaskService{
     private baseURL = "http://localhost:5000/api/task";
 
 
