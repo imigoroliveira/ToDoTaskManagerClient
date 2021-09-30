@@ -28,7 +28,6 @@ import { TaskService } from './services/task.service';
     MatFormFieldModule,
     MatInputModule,
     TaskService
-  
   ],
   providers: [],
   bootstrap: [AppComponent]
