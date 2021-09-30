@@ -1,0 +1,12 @@
+.footer {
+  background-color: #0d1117;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  opacity: 0.9;
+}
+.txt {
+  color: #58a6ff;
+  margin-left: 45%;
+}
