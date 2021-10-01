@@ -1,3 +1,5 @@
+import { DashComponent } from './components/dash/dash.component';
+import { CadastrarComponent } from './components/cadastrar/cadastrar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -15,7 +17,9 @@ import { HttpClientModule } from '@angular/common/http';
   declarations: [
     AppComponent,
     FooterComponent,
-    MenuComponent
+    MenuComponent,
+    DashComponent,
+    CadastrarComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +32,6 @@ import { HttpClientModule } from '@angular/common/http';
     MatFormFieldModule,
     MatInputModule,
     HttpClientModule
-
   ],
   providers: [],
   bootstrap: [AppComponent]
