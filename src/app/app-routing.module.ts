@@ -12,7 +12,10 @@ const routes: Routes = [
     path: "cadastrarTarefa",
     component: CadastrarComponent
   },
-
+  {
+    path: "tasks/listar",
+    component: DashComponent
+  }
 
 ];
 

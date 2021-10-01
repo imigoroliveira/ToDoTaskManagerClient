@@ -23,13 +23,12 @@ export class CadastrarComponent implements OnInit {
 
   cadastrar(): void
     {
-        let task : Task = {
-            nome: this.nome,
-            descricao: this.descricao,
-            prioridade: this.prioridade,
-            data: this.data,
+          let task : Task = {
+          nomeTask: this.nome,
+          descricaoTask: this.descricao,
+          prioridade: this.prioridade,
+          dataTask: this.data
         };
-        //Chamar o create do service
         this.service.create(task).subscribe(task => {
             console.log(task);
             this.router.navigate(["tasks/listar"]);

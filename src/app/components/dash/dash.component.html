@@ -1,3 +1,23 @@
-<li class="lista" *ngFor="let task of tasks">
-  {{ task.NomeTask }}
-</li>
+<div *ngFor="let task of tasks">
+  <li class="lista" >
+    Nome:
+     {{ task.nomeTask }}
+   </li>
+   <br>
+   <li class="lista">
+    Descrição:
+     {{ task.descricaoTask }}
+   </li>
+   <br>
+   <li class="lista">
+     Prioridade:
+     {{ task.prioridade }}
+   </li>
+   <br>
+   <li class="lista">`
+     Data:
+     {{ task.dataTask }}
+     <br><br><br>
+   </li>
+</div>
+

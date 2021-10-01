@@ -1,7 +1,7 @@
 export interface Task {
   _id?: number;
-  nome: string;
-  descricao: string;
+  nomeTask: string;
+  descricaoTask: string;
   prioridade: string;
-  data: string;
+  dataTask: string;
 }
