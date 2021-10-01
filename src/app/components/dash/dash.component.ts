@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Task } from 'src/app/models/task';
+import { TasksService } from 'src/app/services/tasks.service';
 
 @Component({
   selector: 'app-dash',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashComponent implements OnInit {
 
-  constructor() { }
+ tasks: Task[] = [];
+
+  constructor(private TasksService: TasksService) {}
 
   ngOnInit() {
-  }
-
+    this.TasksService.list().subscribe((tasks) =>{
+      this.tasks = tasks;
+      console.log(tasks);
+    });
+}
 }
