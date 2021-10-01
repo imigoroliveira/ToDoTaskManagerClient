@@ -24,10 +24,10 @@ export class CadastrarComponent implements OnInit {
   cadastrar(): void
     {
         let task : Task = {
-            NomeTask: this.nome,
-            DescricaoTask: this.descricao,
-            PrioridadeTask: this.prioridade,
-            DataTask: this.data,
+            nome: this.nome,
+            descricao: this.descricao,
+            prioridade: this.prioridade,
+            data: this.data,
         };
         //Chamar o create do service
         this.service.create(task).subscribe(task => {

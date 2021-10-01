@@ -1,3 +1,4 @@
+import { CadastrarComponent } from './components/cadastrar/cadastrar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -9,13 +10,14 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule} from '@angular/material/icon';
 import { MatFormFieldModule} from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-import { HttpClientModule } from '@angular/common/http'; 
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
-    MenuComponent
+    MenuComponent,
+    CadastrarComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +29,8 @@ import { HttpClientModule } from '@angular/common/http';
     MatInputModule,
     MatFormFieldModule,
     MatInputModule,
-    HttpClientModule
+    HttpClientModule,
+    CadastrarComponent
 
   ],
   providers: [],
