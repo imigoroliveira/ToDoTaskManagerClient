@@ -32,7 +32,7 @@ export class CadastrarComponent implements OnInit {
         //Chamar o create do service
         this.service.create(task).subscribe(task => {
             console.log(task);
-            this.router.navigate(["task/listar"]);
+            this.router.navigate(["tasks/listar"]);
         });
     }
 }

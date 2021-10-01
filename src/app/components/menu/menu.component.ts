@@ -10,8 +10,8 @@ export class MenuComponent implements OnInit {
 
   constructor(private router: Router) {}
 
-  CadastrarTarefa(): void {
-    this.router.navigate(["cadastrar"]);
+  CadastroTarefa(): void {
+    this.router.navigate(["cadastrarTarefa"]);
   };
 
   ngOnInit() {
